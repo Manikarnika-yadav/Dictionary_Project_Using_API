@@ -7,11 +7,11 @@ const suggestionsContainer = document.getElementById('suggestions-container');
 //     const searchTerm = searchInput.value;
 //     searchWord(searchTerm);
 // });
-// Add an event listener for Enter key press
+// Adding an event listener for Enter key press
 searchInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
-        event.preventDefault(); // Prevent the default Enter key behavior (e.g., submitting a form)
-        searchButton.click(); // Trigger the search button click event
+        event.preventDefault(); // Prevent the default Enter key behavior  
+        searchButton.click(); // Triggers search button click event
     }
 });
 
@@ -22,7 +22,7 @@ searchButton.addEventListener('click', () => {
 
 const clearIcon = document.getElementById('clear-search');
 
-// Add an event listener for clear icon click
+// Adding an event listener for clear icon click
 clearIcon.addEventListener('click', () => {
     searchInput.value = '';
 });
@@ -31,11 +31,12 @@ clearIcon.addEventListener('click', () => {
 function searchWord(word) {
     const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
 
-    // Make the API request
+    // Making the API request
     fetch(apiUrl)
-        .then(response => response.json()) // Asynchronously parse the response as JSON
+        // Asynchronously parsing the response as JSON
+        .then(response => response.json()) 
         .then(data => {
-            // Process the API response and display results and suggestions
+            // Processing the API response and displayimg results and suggestions
             displayResults(data);
             displaySuggestions(data);
         })
@@ -46,7 +47,7 @@ function searchWord(word) {
 }
 
 function displayResults(data) {
-    // Clear previous results
+    // Clearing previous results
     resultsContainer.innerHTML = '';
 
     if (data.length === 0) {
@@ -54,7 +55,7 @@ function displayResults(data) {
         return;
     }
 
-    // Display word information, including audio, pronunciation, and definitions
+    // Displayong word information, including audio, pronunciation, and definitions,verbs
     data.forEach(result => {
         const word = result.word;
         const pronunciations = result.phonetics || [];
@@ -66,7 +67,7 @@ function displayResults(data) {
             <h2>${word}</h2>
         `;
 
-        // Display the word's pronunciation (if available)
+        // Displaying the word's pronunciation (if available)
         if (pronunciations.length > 0) {
             const pronunciation = pronunciations[0].text || 'N/A';
             resultElement.innerHTML += `
@@ -74,7 +75,7 @@ function displayResults(data) {
             `;
         }
 
-        // Display a single audio pronunciation (if available)
+        // Displaying audio pronunciation (if available)
         if (pronunciations.length > 0) {
             const audio = pronunciations[0].audio || '';
             if (audio) {
@@ -84,7 +85,7 @@ function displayResults(data) {
             }
         }
 
-        // Display definitions for noun, proper noun, and verb as ordered lists
+        // Displaying definitions for noun, proper noun, and verb  
         meanings.forEach(meaning => {
             const partOfSpeech = meaning.partOfSpeech || 'N/A';
             const definitions = meaning.definitions || [];
@@ -118,7 +119,7 @@ function displaySuggestions(data) {
         return;
     }
 
-    // Display similar words (if available)
+    // Displaying similar words (if available)
     const suggestions = data[0].suggestions || [];
 
     if (suggestions.length > 0) {
