@@ -2,40 +2,41 @@
 Dictionary_Project_Using_API
 
 
-**Usage Instructions for Dictionary Website**
+Guidelines for using the dictionary website
 
-1. **Opening the Website**
-   - To use the Dictionary website, you can open the `index.html` file in a web browser of your choice. You may also deploy it on a web server for online access.
+Open the website
 
-2. **Searching for a Word**
-   - Upon opening the website, you will see a search bar at the top of the page. Enter the word you want to look up in this search bar.
+To use the Dictionary website, you can open the index.html file in the web browser of your choice. You can also upload it to a web server for online access.
+The search for the word
 
-3. **Performing a Search**
-   - After entering the word, you can either press the "Search" button or hit the "Enter" key on your keyboard to initiate the search.
+Open the web browser and you will see a search bar at the top of the page. Enter the password you want to see in this search bar.
+While doing the research
 
-4. **Viewing Word Definitions**
-   - The search results will appear below the search bar.
-   - You will see the word's pronunciation (if available), a single audio pronunciation (if available), and definitions categorized by part of speech (e.g., noun, proper noun, verb).
-   - Definitions are displayed as ordered lists for easy reading.
+You can press the "Search" button or press the "Enter" key on your keyboard to start a search after typing a word.
+Looking at the definition of the word
 
-5. **Listening to Pronunciation**
-   - If an audio pronunciation is available, you can click on the audio player's controls to listen to the pronunciation.
+The search results appear at the bottom of the search bar.
+You will find pronunciation (if available), audio pronunciation (if available), and definitions categorized by part of speech (e.g. noun, proper noun, verb).
+Translations are presented in chronological order for ease of reading.
+Hearing the pronunciation
 
-6. **Similar Word Suggestions**
-   - If the API provides similar word suggestions related to your search term, they will be displayed in a section titled "Similar Words."
+If there is an audio accent, you can click on the controls of the audio player to hear the accent.
+Similar wording suggestions
 
-7. **Clearing Previous Results**
-   - If you want to perform a new search, simply enter a new word in the search bar, and the previous results will be cleared automatically.
-     
-8. **Clearing The Search Bar**
-   - If you want to clear the search bar, simply click on the clear icon on the right corner of the search bar, and the entered word will be cleared automatically.
-     
-9. **Handling Errors**
-   - If the entered word is not found in the dictionary, you will see a message indicating "Error fetching data."
+If the API provides similar phrase suggestions for your search term, it will be displayed in the "Similar phrases" section.
+cleaning up old results
 
-**Special Features**
+To perform a new search, simply type a new term in the search bar, and the old results will automatically be deleted.
+Clearing the Search Bar
 
-- **Search Highlighting**: The website automatically highlights the searched word within the definitions and examples, making it easy to identify the word's usage.
+To delete the search bar, just click the clear icon to the right of the search bar, and the password will be automatically deleted.
+Errors and how to deal with them
+
+If the password entered is not found in the dictionary, you will see the message "Error fetching data".
+Special Features
+
+Highlighted search: The site automatically highlights the search term in definitions and examples, making it easy to see how the term is used.
+that'
 
 That's it! You can use this Dictionary website to quickly look up word definitions, listen to pronunciations, and explore similar word suggestions. It provides a user-friendly interface for enhancing your vocabulary and understanding word meanings.
 
