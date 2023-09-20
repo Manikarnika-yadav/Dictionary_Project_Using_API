@@ -30,10 +30,9 @@ To perform a new search, simply type a new term in the search bar, and the old r
 Clearing the Search Bar
 
 To delete the search bar, just click the clear icon to the right of the search bar, and the password will be automatically deleted.
-Errors and how to deal with them
 
-If the password entered is not found in the dictionary, you will see the message "Error fetching data".
 Special Features
+If the word entered is not found in the dictionary, you will see the message "Word not found.".
 
 Highlighted search: The site automatically highlights the search term in definitions and examples, making it easy to see how the term is used.
 that'
